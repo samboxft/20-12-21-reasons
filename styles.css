@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  background-color: beige;
+  color: purple;
+  margin: 20px 20px 20px 20px;
+}
+
+#header {
+  font-family: "Langar", cursive;
+
+}
+.doubts {
+    font-family: "Oswald", sans-serif;
+}
+.consider {
+    font-family: "Oswald", sans-serif;
+
+}
+
+
+.button {
+    margin: 7% auto;
+    width: 100px;
+    height: 30px;
+}
