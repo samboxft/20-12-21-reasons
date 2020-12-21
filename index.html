@@ -14,32 +14,34 @@
 
     <style>
         body {
-  text-align: center;
-  background-color: beige;
-  color: purple;
-  margin: 20px 20px 20px 20px;
-}
+            text-align: center;
+            background-color: beige;
+            color: purple;
+            margin: 20px 20px 20px 20px;
+        }
 
-#header {
-  font-family: "Langar", cursive;
+        #header {
+            font-family: "Langar", cursive;
 
-}
-.doubts {
-    font-family: "Oswald", sans-serif;
-}
-.consider {
-    font-family: "Oswald", sans-serif;
+        }
 
-}
+        .doubts {
+            font-family: "Oswald", sans-serif;
+        }
+
+        .consider {
+            font-family: "Oswald", sans-serif;
+
+        }
 
 
-.button {
-    margin: 7% auto;
-    width: 100px;
-    height: 30px;
-}
+        .button {
+            margin: 7% auto;
+            width: 100px;
+            height: 30px;
+        }
     </style>
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
     <title>reasons</title>
 
 </head>
@@ -52,10 +54,15 @@
             <p class="doubts"> Please Type in a Doubt You have : </p><input type="text" name="doubt" id="doubt"
                 size="10"><br>
             <p class="consider"></p> You Should consider that I: <input type="text" name="reason" size="25"><br>
-            <input type="button" class="button"  value="generate" onclick="generateReason()">
-            <input type="reset"  class="button" value="Reset" />
+            <div name="container">
+                <p id="explanation" name="exp"></p>
+
+            </div>
+            <input type="button" class="button" value="generate" onclick="generateReason()">
+            <input type="reset" class="button" value="Reset" onclick="resetAll()" />
         </form>
     </div>
+
 </body>
 
 </html>
